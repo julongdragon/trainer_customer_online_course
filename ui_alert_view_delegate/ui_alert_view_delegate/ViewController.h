@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 <UIAlertViewDelegate>
+
 @property (strong, nonatomic) IBOutlet UILabel *label;
 
 - (IBAction)showAlert:(id)sender;
