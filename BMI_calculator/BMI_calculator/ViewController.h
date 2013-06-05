@@ -28,4 +28,5 @@
 @property(nonatomic,strong)UISlider *slider_two;
  */
 -(IBAction)startvalue:(id)sender;
+
 @end
