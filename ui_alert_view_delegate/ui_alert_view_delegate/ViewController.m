@@ -29,21 +29,18 @@
 
 - (IBAction)showAlert:(id)sender
 {
-    UIAlertView *a = [[UIAlertView alloc]initWithTitle:@"Welcome to My Office" message:@"how are you today ?" delegate:self cancelButtonTitle:@"not good , it's so Hot!" otherButtonTitles:@"So you are?", nil];
-    [a show];
-    
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Alert View" message:@"choose select below:" delegate:self cancelButtonTitle:@"no" otherButtonTitles:@"yes" ,   nil ];
+    [alert show];
 }
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     switch (buttonIndex) {
         case 0:
-            label.text = @"good";
+            label.text = @"you say ' No ' ";
             break;
         case 1:
-            label.text = @"yes";
-        case 2:
-            label.text = @"not bad";
-            
+            label.text = @"you say ' Yes ' ";
+        
         default:
             break;
     }
