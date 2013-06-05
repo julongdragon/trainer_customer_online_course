@@ -19,7 +19,7 @@
     //int slider = slider_two.value;
     myHeight.text = [NSString stringWithFormat:@"%d",slider];
     //smyWeight.text = [NSString stringWithFormat:@"%d",sliderB];
-    int slider2 = slider_one.value;
+    int slider2 = slider_two.value;
     myWeight.text = [NSString stringWithFormat:@"%d",slider2];
 }
 
